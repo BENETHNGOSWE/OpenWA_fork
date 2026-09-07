@@ -41,6 +41,7 @@ services:
     labels:
       - 'com.openwa.service=docker-proxy'
       - 'com.openwa.core=true'
+      - 'traefik.docker.network=openwa-network'
 
   # ===== CORE: OpenWA Backend API =====
   openwa-api:
